@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Socket Client</h1>
+    <hr>
+    <p>
+        Server Status:
+        <spam id="lblOnline" class="text-success"> Online</spam>
+        <spam id="lblOffline" class="text-danger"> Offline</spam>
+    </p>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" id="txtMessage" class="form-control">
+        </div>
+        <div class="col">
+            <button id="btnSend" class="btn btn-primary">
+                Enviar
+            </button>
+        </div>
+    </div>
+    
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket_client.js"></script>
 </body>
 </html>
